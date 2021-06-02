@@ -58,3 +58,6 @@ materialized='table'
 				where stg.DIMENSIONDISPLAYVALUE like '4%' and BUDGETMODELID not like 'FCST%'
 				and stg.Date <= getdate() and Year(stg.Date)>2017
 				group by fnSplit.Column2,fnSplit.Column7,stg.LegalEntityId,BUDGETMODELID,cast(stg.Date as Date),Cmp.CompanyCurrency
+
+
+
