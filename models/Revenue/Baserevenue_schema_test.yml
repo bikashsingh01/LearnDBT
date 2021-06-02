@@ -1,0 +1,26 @@
+version: 2
+ 
+models:
+  - name: BaseRevenue
+    columns: 
+      - name: RAWDEPARTMENTKEY
+        tests:
+         - not_null 
+      - name: RAWPRODUCTGROUPKEY
+        tests:
+         - not_null 
+      - name: RAWCOMPANYKEY
+        tests:
+         - not_null 
+      - name: RAWSCENARIOKEY
+        tests:
+         - not_null 
+      - name: RAWREVENUE
+        tests:
+         - not_null 
+      - name: UDPDATASETKEY
+        tests:
+         - not_null 
+      - name: UDPSYSTEMKEY
+        tests:
+         - not_null
